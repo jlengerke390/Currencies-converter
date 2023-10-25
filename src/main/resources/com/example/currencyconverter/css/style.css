@@ -1,0 +1,48 @@
+.text-Label{
+    -fx-font-family: Cambria;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.result-text{
+    -fx-font-family: Cambria;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+.choice-box{
+    -fx-alignment: center;
+    -fx-background-color: white;
+    -fx-border-color: #D9D7DD;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 2px;
+    -fx-border-style: solid;
+
+    -fx-font-family: Cambria;
+    -fx-font-size: 14;
+    -fx-fill-width: bold;
+
+}
+.choice-box:hover{
+    -fx-border-color: #0066CC;
+}
+
+.custom-btn{
+    -fx-background-color:  #0066CC;
+    -fx-background-radius: 50;
+    -fx-border-color:#0066cc;
+    -fx-border-style: solid;
+    -fx-border-width: 2px;
+    -fx-border-radius: 50;
+    -fx-font-family: Cambria;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+
+}
+
+.custom-btn:hover{
+    -fx-background-color: #fff;
+    -fx-text-fill: #0066cc;
+}

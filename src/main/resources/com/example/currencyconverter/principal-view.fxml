@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.currencyconverter.controller.ControllerPrincipalView">
+   <children>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menu">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="History">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Graph" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="93.0" layoutY="92.0" text="Amount to Convert:" textFill="#0066cc">
+         <font>
+            <Font name="Cambria Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputField" layoutX="93.0" layoutY="134.0" prefHeight="51.0" prefWidth="405.0" promptText="\$" style="-fx-font-size: 16;">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#eeda6800" height="45.0" layoutX="93.0" layoutY="202.0" opacity="0.53" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: F3DFC1;" styleClass="text-box" width="57.0" />
+      <Label layoutX="100.0" layoutY="197.0" prefHeight="51.0" prefWidth="57.0" styleClass="text-Label" stylesheets="@css/style.css" text="From" textAlignment="CENTER" />
+      <Rectangle arcHeight="5.0" arcWidth="10.0" fill="#eeda6800" height="45.0" layoutX="309.0" layoutY="202.0" opacity="0.53" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: F3DFC1;" styleClass="text-box" width="57.0" />
+      <Label layoutX="327.0" layoutY="199.0" prefHeight="51.0" prefWidth="57.0" styleClass="text-Label" stylesheets="@css/style.css" text="To" textAlignment="CENTER" />
+      <Button layoutX="171.0" layoutY="321.0" mnemonicParsing="false" onAction="#convertButton" prefHeight="45.0" prefWidth="111.0" styleClass="custom-btn" stylesheets="@css/style.css" text="Convert">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="311.0" layoutY="321.0" mnemonicParsing="false" onAction="#resetButton" prefHeight="45.0" prefWidth="111.0" styleClass="custom-btn" stylesheets="@css/style.css" text="Reset">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ComboBox fx:id="currencyBoxFrom" layoutX="150.0" layoutY="201.0" onAction="#getCurrencyFrom" prefHeight="45.0" prefWidth="132.0" style="-fx-padding: 0.15em 0.25em;" styleClass="choice-box" stylesheets="@css/style.css" />
+      <ComboBox fx:id="currencyBoxTo" layoutX="367.0" layoutY="202.0" onAction="#getCurrencyTo" prefHeight="45.0" prefWidth="132.0" style="-fx-padding: 0.15em 0.25em;" styleClass="choice-box" stylesheets="@css/style.css" />
+      <Label fx:id="resultValue" alignment="CENTER" layoutX="147.0" layoutY="280.0" prefHeight="25.0" prefWidth="295.0" styleClass="result-text" stylesheets="@css/style.css" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
