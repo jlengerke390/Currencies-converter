@@ -22,7 +22,7 @@ public class ConverterController {
         exchangesRate.get("COP").put("GBP", 5286.47);
         exchangesRate.get("COP").put("JPY", 29.07);
         exchangesRate.get("COP").put("KRW", 3.21);
-        exchangesRate.get("COP").put("USD", 4329.73);
+        exchangesRate.get("COP").put("USD", 4187.00);
 
         exchangesRate.get("EUR").put("GBP", 1.16);
         exchangesRate.get("EUR").put("JPY", 0.0064);
@@ -47,7 +47,7 @@ public class ConverterController {
         exchangesRate.get("KRW").put("JPY", 0.11);
         exchangesRate.get("KRW").put("USD", 0.00074);
 
-        exchangesRate.get("USD").put("COP", 4317.0);
+        exchangesRate.get("USD").put("COP", 4187.00);
         exchangesRate.get("USD").put("EUR", 0.95);
         exchangesRate.get("USD").put("GBP", 0.82);
         exchangesRate.get("USD").put("JPY", 148.61);
